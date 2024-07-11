@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head id="Head">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<title>
+			Home
+		</title>
+		<style>
+			/*! CSS Used from: https://communityhealthafrica.org/Resources/Search/SearchSkinObjectPreview.css?cdv=56 */
+			.searchInputContainer {
+				display: inline-block;
+				margin: 0 -3px 0 0;
+				position: relative;
+			}
+			
+			.searchInputContainer a.dnnSearchBoxClearText {
+				display: block;
+				position: absolute;
+				right: 10px;
+				width: 16px;
+				height: 16px;
+				background: none;
+				cursor: pointer;
+				margin: 7px 0 7px 0;
+				z-index: 20;
+			}
+			
+			/*! CSS Used from: https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/css/all.min.css?cdv=56 */
+			.fas {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+			}
+			
+			.fa-bars:before {
+				content: "\f0c9";
+			}
+			
+			.fa-search:before {
+				content: "\f002";
+			}
+			
+			.fas {
+				font-family: "Font Awesome 5 Free";
+			}
+			
+			.fas {
+				font-weight: 900;
+			}
+			
+			/*! CSS Used from: https://communityhealthafrica.org/Portals/0/home.css?cdv=56 */
+			ul li {
+				list-style-type: none;
+			}
+			
+			/*! CSS Used from: https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/css/style.min.css?cdv=56 */
+			:root {
+				--blue: #007bff;
+				--indigo: #6610f2;
+				--purple: #6f42c1;
+				--pink: #e83e8c;
+				--red: #dc3545;
+				--orange: #fd7e14;
+				--yellow: #ffc107;
+				--green: #28a745;
+				--teal: #20c997;
+				--cyan: #17a2b8;
+				--white: #fff;
+				--gray: #6c757d;
+				--gray-dark: #343a40;
+				--primary: #007bff;
+				--secondary: #6c757d;
+				--success: #28a745;
+				--info: #17a2b8;
+				--warning: #ffc107;
+				--danger: #dc3545;
+				--light: #f8f9fa;
+				--dark: #343a40;
+				--breakpoint-xs: 0;
+				--breakpoint-sm: 576px;
+				--breakpoint-md: 768px;
+				--breakpoint-lg: 992px;
+				--breakpoint-xl: 1200px;
+				--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+			}
+			
+			*,
+			::after,
+			::before {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			
+			html {
+				font-family: sans-serif;
+				line-height: 1.15;
+				-webkit-text-size-adjust: 100%;
+				-webkit-tap-highlight-color: transparent;
+			}
+			
+			footer,
+			header,
+			main,
+			nav {
+				display: block;
+			}
+			
+			body {
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 1.5;
+				color: #212529;
+				text-align: left;
+				background-color: #fff;
+			}
+			
+			h2,
+			h3 {
+				margin-top: 0;
+				margin-bottom: .5rem;
+			}
+			
+			p {
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+			
+			ol,
+			ul {
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
+			
+			ul ul {
+				margin-bottom: 0;
+			}
+			
+			blockquote {
+				margin: 0 0 1rem;
+			}
+			
+			strong {
+				font-weight: bolder;
+			}
+			
+			a {
+				color: #007bff;
+				text-decoration: none;
+				background-color: transparent;
+			}
+			
+			a:hover {
+				color: #0056b3;
+				text-decoration: underline;
+			}
+			
+			a:not([href]):not([tabindex]) {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			a:not([href]):not([tabindex]):focus,
+			a:not([href]):not([tabindex]):hover {
+				color: inherit;
+				text-decoration: none;
+			}
+			
+			a:not([href]):not([tabindex]):focus {
+				outline: 0;
+			}
+			
+			img {
+				vertical-align: middle;
+				border-style: none;
+			}
+			
+			input {
+				margin: 0;
+				font-family: inherit;
+				font-size: inherit;
+				line-height: inherit;
+			}
+			
+			input {
+				overflow: visible;
+			}
+			
+			h2,
+			h3 {
+				margin-bottom: .5rem;
+				font-weight: 500;
+				line-height: 1.2;
+			}
+			
+			h2 {
+				font-size: 2rem;
+			}
+			
+			h3 {
+				font-size: 1.75rem;
+			}
+			
+			.container {
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			
+			@media (min-width:576px) {
+				.container {
+					max-width: 540px;
+				}
+			}
+			
+			@media (min-width:768px) {
+				.container {
+					max-width: 720px;
+				}
+			}
+			
+			@media (min-width:992px) {
+				.container {
+					max-width: 960px;
+				}
+			}
+			
+			@media (min-width:1200px) {
+				.container {
+					max-width: 1140px;
+				}
+			}
+			
+			.container-fluid {
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			
+			.row {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+			
+			.col-md-4,
+			.col-md-6,
+			.col-md-8 {
+				position: relative;
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			
+			@media (min-width:768px) {
+				.col-md-4 {
+					-webkit-box-flex: 0;
+					-ms-flex: 0 0 33.33333%;
+					flex: 0 0 33.33333%;
+					max-width: 33.33333%;
+				}
+			
+				.col-md-6 {
+					-webkit-box-flex: 0;
+					-ms-flex: 0 0 50%;
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+			
+				.col-md-8 {
+					-webkit-box-flex: 0;
+					-ms-flex: 0 0 66.66667%;
+					flex: 0 0 66.66667%;
+					max-width: 66.66667%;
+				}
+			}
+			
+			.btn,
+			.btn.split~.sub-toggle {
+				display: inline-block;
+				font-weight: 400;
+				color: #212529;
+				text-align: center;
+				vertical-align: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				background-color: transparent;
+				border: 1px solid transparent;
+				padding: .375rem .75rem;
+				font-size: 1rem;
+				line-height: 1.5;
+				border-radius: .25rem;
+				-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+			}
+			
+			@media (prefers-reduced-motion:reduce) {
+			
+				.btn,
+				.btn.split~.sub-toggle {
+					-webkit-transition: none;
+					transition: none;
+				}
+			}
+			
+			.btn.split~.sub-toggle:hover,
+			.btn:hover {
+				color: #212529;
+				text-decoration: none;
+			}
+			
+			.btn.split~.sub-toggle:focus,
+			.btn:focus {
+				outline: 0;
+				-webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+				box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+			}
+			
+			.btn.split~.sub-toggle:disabled,
+			.btn:disabled {
+				opacity: .65;
+			}
+			
+			.btn-primary,
+			.btn.split~.sub-toggle {
+				color: #fff;
+				background-color: #007bff;
+				border-color: #007bff;
+			}
+			
+			.btn-primary:hover,
+			.btn.split~.sub-toggle:hover {
+				color: #fff;
+				background-color: #0069d9;
+				border-color: #0062cc;
+			}
+			
+			.btn-primary:focus,
+			.btn.split~.sub-toggle:focus {
+				-webkit-box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
+				box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
+			}
+			
+			.btn-primary:disabled,
+			.btn.split~.sub-toggle:disabled {
+				color: #fff;
+				background-color: #007bff;
+				border-color: #007bff;
+			}
+			
+			.btn-primary:not(:disabled):not(.disabled):active,
+			.btn.split~.sub-toggle:not(:disabled):not(.disabled):active {
+				color: #fff;
+				background-color: #0062cc;
+				border-color: #005cbf;
+			}
+			
+			.btn-primary:not(:disabled):not(.disabled):active:focus,
+			.btn.split~.sub-toggle:not(:disabled):not(.disabled):active:focus {
+				-webkit-box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
+				box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
+			}
+			
+			.bg-primary {
+				background-color: #007bff !important;
+			}
+			
+			.justify-content-end {
+				-webkit-box-pack: end !important;
+				-ms-flex-pack: end !important;
+				justify-content: flex-end !important;
+			}
+			
+			.justify-content-center {
+				-webkit-box-pack: center !important;
+				-ms-flex-pack: center !important;
+				justify-content: center !important;
+			}
+			
+			.align-items-center {
+				-webkit-box-align: center !important;
+				-ms-flex-align: center !important;
+				align-items: center !important;
+			}
+			
+			.py-5 {
+				padding-top: 3rem !important;
+			}
+			
+			.py-5 {
+				padding-bottom: 3rem !important;
+			}
+			
+			.text-center {
+				text-align: center !important;
+			}
+			
+			@media print {
+			
+				*,
+				::after,
+				::before {
+					text-shadow: none !important;
+					-webkit-box-shadow: none !important;
+					box-shadow: none !important;
+				}
+			
+				a:not(.btn) {
+					text-decoration: underline;
+				}
+			
+				blockquote {
+					border: 1px solid #adb5bd;
+					page-break-inside: avoid;
+				}
+			
+				img {
+					page-break-inside: avoid;
+				}
+			
+				h2,
+				h3,
+				p {
+					orphans: 3;
+					widows: 3;
+				}
+			
+				h2,
+				h3 {
+					page-break-after: avoid;
+				}
+			
+				body {
+					min-width: 992px !important;
+				}
+			
+				.container {
+					min-width: 992px !important;
+				}
+			}
+			
+			*,
+			:after,
+			:before {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			
+			body {
+				font-size: 16px;
+				font-weight: 200;
+				line-height: 1.5;
+				font-family: "Open Sans", Helvetica, sans-serif;
+				color: #4a4a4a;
+				background-color: #fff;
+				-webkit-font-smoothing: antialiased;
+			}
+			
+			h2,
+			h3 {
+				font-family: "Open Sans", Helvetica, sans-serif;
+			}
+			
+			h2 {
+				font-size: 38px;
+				font-size: 2.375rem;
+				line-height: 1.26316;
+				margin: 0 0 .31579em 0;
+			}
+			
+			h3 {
+				font-size: 26px;
+				font-size: 1.625rem;
+				line-height: 1.38462;
+				margin: 0 0 .46154em 0;
+			}
+			
+			p {
+				margin: 0 0 1.5rem;
+			}
+			
+			blockquote,
+			ol,
+			ul {
+				margin-bottom: 1.5rem;
+			}
+			
+			ul ul {
+				margin: 0;
+			}
+			
+			strong {
+				line-height: 1;
+			}
+			
+			a {
+				color: #007bff;
+				text-decoration: none;
+				-webkit-transition: .25s ease-in-out all;
+				transition: .25s ease-in-out all;
+			}
+			
+			a:hover {
+				color: #006fe6;
+				text-decoration: none;
+			}
+			
+			footer a,
+			header a {
+				color: #84a3d2;
+				font-weight: 600;
+			}
+			
+			footer a:hover,
+			header a:hover {
+				color: #cfdbed;
+			}
+			
+			.DNNEmptyPane {
+				display: none;
+			}
+			
+			.btn-primary,
+			.btn.split~.sub-toggle {
+				background-color: #84a3d2;
+				border-color: #84a3d2;
+			}
+			
+			.btn-primary:active,
+			.btn-primary:focus,
+			.btn-primary:hover,
+			.btn.split~.sub-toggle:active,
+			.btn.split~.sub-toggle:focus,
+			.btn.split~.sub-toggle:hover {
+				background-color: #84a3d2 !important;
+				border-color: #84a3d2 !important;
+				-webkit-box-shadow: none !important;
+				box-shadow: none !important;
+			}
+			
+			.btn.split {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+			
+			.btn.split~.sub-toggle {
+				border-top-right-radius: .25rem;
+				border-bottom-right-radius: .25rem;
+				margin-left: 1px;
+			}
+			
+			[class*=col][class*=bg-] {
+				background-clip: content-box;
+			}
+			
+			@media only screen and (max-width:36em) {
+				.container-fluid .container {
+					padding: 0;
+				}
+			}
+			
+			@media only screen and (max-width:48em) {
+				[class^=col-md]+[class^=col-md] {
+					margin-top: 2rem;
+				}
+			
+				.container [class^=col-md]>div {
+					padding-left: 1rem !important;
+					padding-right: 1rem !important;
+				}
+			
+				.container-fluid .container {
+					padding: 0;
+				}
+			
+				[class^=col-md][class*=bg-] {
+					background-clip: padding-box !important;
+				}
+			}
+			
+			@media only screen and (max-width:62em) {
+				.container-fluid .container {
+					padding: 0;
+				}
+			}
+			
+			@media only screen and (max-width:75em) {
+				.container-fluid .container {
+					padding: 0;
+				}
+			}
+			
+			[class*=bg-] {
+				color: #fff;
+			}
+			
+			[class*=bg-][class*="-primary"] {
+				background-color: #84a3d2 !important;
+			}
+			
+			[class*=bg-][class*="-tertiary"] {
+				background-color: #84a3d2;
+			}
+			
+			[class*=bg-][class*="-light-grey"] {
+				background-color: #e6e6e6;
+				color: #4a4a4a;
+			}
+			
+			.cp-5>div {
+				padding: 2rem !important;
+			}
+			
+			.cpr-5>div {
+				padding-right: 2rem !important;
+			}
+			
+			.nav-main {
+				-webkit-box-pack: justify;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+				position: relative;
+			}
+			
+			.nav-main a[id*=dnnLOGO] {
+				padding: 1rem;
+			}
+			
+			.nav-main a[id*=dnnLOGO] img {
+				height: 45px;
+				max-height: 100%;
+				width: auto;
+			}
+			
+			@media only screen and (max-width:25em) {
+				.nav-main a[id*=dnnLOGO] img {
+					height: 30px;
+				}
+			}
+			
+			.nav-main nav {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+			
+			.user-controls>ul {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				margin: 0;
+				padding: 5px;
+			}
+			
+			.user-controls>ul>li {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+			
+			.user-controls>ul>li+li {
+				margin-left: 1rem;
+			}
+			
+			.user-controls>ul>li a {
+				padding: .375rem .375rem;
+				line-height: 1.5;
+				border: 1px solid transparent;
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				color: #fff;
+			}
+			
+			.user-controls>ul>li a:focus,
+			.user-controls>ul>li a:hover {
+				color: #84a3d2;
+			}
+			
+			.user-controls>ul>li input {
+				padding: .375rem .375rem;
+				border: 1px solid #84a3d2;
+				border-radius: .25rem;
+			}
+			
+			.user-controls>ul>li .dnnSearchBoxClearText {
+				top: 0;
+				margin: 0;
+				height: 100%;
+			}
+			
+			@media only screen and (max-width:50em) {
+				.user-controls input {
+					width: 100px;
+				}
+			}
+			
+			.menu-collapser {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-color: purple;
+			}
+			
+			.collapse-button {
+				position: absolute;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				right: 15px;
+				top: 50%;
+				-webkit-transform: translate(0, -50%);
+				-ms-transform: translate(0, -50%);
+				transform: translate(0, -50%);
+				width: 44px;
+				height: 44px;
+				padding: 6px;
+				color: #84a3d2;
+				font-size: 30px;
+				font-size: 1.875rem;
+				text-align: center;
+				background-color: rgba(255, 255, 255, .75);
+				-webkit-transition: all .3s ease;
+				transition: all .3s ease;
+				cursor: pointer;
+			}
+			
+			.collapse-button:focus,
+			.collapse-button:hover {
+				color: #84a3d2;
+			}
+			
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			nav ul.slimmenu>li {
+				position: relative;
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				-webkit-box-align: stretch;
+				-ms-flex-align: stretch;
+				align-items: stretch;
+			}
+			
+			nav ul.slimmenu>li+li {
+				margin-left: 10px;
+			}
+			
+			nav ul.slimmenu .sub-toggle {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				width: 32px;
+				height: auto;
+				cursor: pointer;
+			}
+			
+			nav ul.slimmenu .sub-toggle:before {
+				display: inline-block;
+				content: "";
+				color: #fff;
+				margin-top: .15em;
+				border-top: .3em solid;
+				border-right: .3em solid transparent;
+				border-bottom: 0;
+				border-left: .3em solid transparent;
+				-webkit-transition: .25s ease all;
+				transition: .25s ease all;
+			}
+			
+			nav ul.slimmenu.normal>li>ul {
+				position: absolute;
+				left: 0;
+				top: calc(100% + 1px);
+				z-index: 999;
+				background: #84a3d2;
+				display: none;
+				width: auto;
+				border-radius: .25em;
+			}
+			
+			nav ul.slimmenu.normal>li>ul li {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				position: relative;
+			}
+			
+			nav ul.slimmenu.normal>li>ul li:first-child a {
+				border-top-left-radius: .25em;
+				border-top-right-radius: .25em;
+			}
+			
+			nav ul.slimmenu.normal>li>ul li:last-child a {
+				border-bottom-left-radius: .25em;
+				border-bottom-right-radius: .25em;
+			}
+			
+			nav ul.slimmenu.normal>li>ul a {
+				color: #fff;
+				padding: 10px 20px;
+				-webkit-box-flex: 1;
+				-ms-flex-positive: 1;
+				flex-grow: 1;
+				white-space: nowrap;
+			}
+			
+			nav ul.slimmenu.normal>li>ul a:focus,
+			nav ul.slimmenu.normal>li>ul a:hover {
+				background-color: #84a3d2;
+			}
+			
+			main div.container,
+			main div.container-fluid {
+				margin-bottom: 4rem;
+			}
+			
+			footer .upper {
+				margin-bottom: 0;
+			}
+			
+			footer a {
+				font-weight: 400;
+			}
+			
+			footer .disclaimer {
+				font-size: 12px;
+				font-size: .75rem;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				margin-bottom: 0;
+			}
+			
+			footer .disclaimer ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			
+			footer .disclaimer ul li+li:before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				height: 100%;
+				width: 10px;
+				border-left: 1px solid #fff;
+				margin-left: 10px;
+			}
+			
+			footer .disclaimer a {
+				color: #fff;
+			}
+			
+			.bannerpane {
+				background: #84a3d2;
+				background: linear-gradient(135deg, #406db0 0, #84a3d2 50%, #cfdbed 100%);
+				color: #fff;
+			}
+			
+			.bannerpane div[class*=col-] {
+				padding-top: 6rem;
+				padding-bottom: 6rem;
+			}
+			
+			/*! CSS Used fontfaces */
+			@font-face {
+				font-family: "Font Awesome 5 Free";
+				font-style: normal;
+				font-weight: 400;
+				font-display: auto;
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-regular-400.eot);
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-regular-400.woff2) format("woff2"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-regular-400.woff) format("woff"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-regular-400.ttf) format("truetype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+			}
+			
+			@font-face {
+				font-family: "Font Awesome 5 Free";
+				font-style: normal;
+				font-weight: 900;
+				font-display: auto;
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-solid-900.eot);
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-solid-900.woff2) format("woff2"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-solid-900.woff) format("woff"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-solid-900.ttf) format("truetype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+			}
+			
+			@font-face {
+				font-family: 'Open Sans';
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Regular.eot);
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Regular.eot?#iefix) format("embedded-opentype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Regular.woff2) format("woff2"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Regular.woff) format("woff"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Regular.ttf) format("truetype");
+				font-weight: 400;
+				font-style: normal;
+				font-display: fallback;
+			}
+			
+			@font-face {
+				font-family: 'Open Sans';
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Bold.eot);
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Bold.eot?#iefix) format("embedded-opentype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Bold.woff2) format("woff2"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Bold.woff) format("woff"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Bold.ttf) format("truetype");
+				font-weight: 700;
+				font-style: normal;
+				font-display: fallback;
+			}
+			
+			@font-face {
+				font-family: 'Open Sans';
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-ExtraBold.eot);
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-ExtraBold.eot?#iefix) format("embedded-opentype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-ExtraBold.woff2) format("woff2"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-ExtraBold.woff) format("woff"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-ExtraBold.ttf) format("truetype");
+				font-weight: 800;
+				font-style: normal;
+				font-display: fallback;
+			}
+			
+			@font-face {
+				font-family: 'Open Sans';
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Light.eot);
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Light.eot?#iefix) format("embedded-opentype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Light.woff2) format("woff2"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Light.woff) format("woff"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-Light.ttf) format("truetype");
+				font-weight: 300;
+				font-style: normal;
+				font-display: fallback;
+			}
+			
+			@font-face {
+				font-family: 'Open Sans';
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-SemiBold.eot);
+				src: url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-SemiBold.woff2) format("woff2"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-SemiBold.woff) format("woff"), url(https://communityhealthafrica.org/Portals/_default/skins/communityhealthafrica/fonts/OpenSans-SemiBold.ttf) format("truetype");
+				font-weight: 600;
+				font-style: normal;
+				font-display: fallback;
+			}
+		</style>
+		<meta id="MetaDescription" name="DESCRIPTION" content="Dedicated to easing poverty and suffering by supporting mobile clinics and remote healthcare providers in northern Kenya. " />
+		<meta id="MetaKeywords" name="KEYWORDS" content="Community, health, Africa, donations,philanthropy,  easing poverty, easing suffering,supporting clinics,supporting mobile clinics,remote healthcare providers,DotNetNuke,DNN" />
+		<meta id="MetaGenerator" name="GENERATOR" content="DotNetNuke " />
+		<meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" />
+		<!-- ALL SCRIPTS HERE-->
+		<script src="https://communityhealthafrica.org/Resources/libraries/jQuery/03_02_01/jquery.js?cdv=56" type="text/javascript"></script>
+		<script src="https://communityhealthafrica.org/Resources/libraries/jQuery-Migrate/03_00_00/jquery-migrate.js?cdv=56" type="text/javascript"></script>
+		<script src="https://communityhealthafrica.org/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=56" type="text/javascript"></script>
+		<script type="text/javascript">
+				//<![CDATA[
+				var theForm = document.forms['Form'];
+				if (!theForm) {
+				    theForm = document.Form;
+				}
+				function __doPostBack(eventTarget, eventArgument) {
+				    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+				        theForm.__EVENTTARGET.value = eventTarget;
+				        theForm.__EVENTARGUMENT.value = eventArgument;
+				        theForm.submit();
+				    }
+				}
+				//]]>
+			</script>
+			<script src="https://communityhealthafrica.org/WebResource.axd?d=pynGkmcFUV2L2_0hYQ44i1ET-GrWtt2drHabNtKee0t5fNKVynM95_hqtP81&amp;t=638259186740000000" type="text/javascript"></script>
+			<script src="https://communityhealthafrica.org/ScriptResource.axd?d=NJmAwtEo3IoSsDnzRtPZa4eLpxFqTONP6CqlAeffX0XYuvMXVqi7lUfpwpAX8WEcW6kWJh8O3bhAogcpoI3_bFfU2pGDeumSkXYJA-nfeUim0WXbpnbzKQJv22dmb1c_vzbDIg2&amp;t=5d0a842b" type="text/javascript"></script>
+			<script src="https://communityhealthafrica.org/ScriptResource.axd?d=dwY9oWetJoKpBdd2M2Ib7xwiISo7b1wqw3y4yuC1ZCfZpAoxwp7zBGXp15hAg45WTTg3lF3pGJWBkatXAggSbl_InSpci0HjTO28IKpbXLXo05wwVNq5OPWsIHYUinT02fNmN237TatVXhdS0&amp;t=5d0a842b" type="text/javascript"></script>
+			<script src="https://communityhealthafrica.org/js/dnn.js?cdv=56" type="text/javascript"></script><script src="https://communityhealthafrica.org/js/dnn.modalpopup.js?cdv=56" type="text/javascript"></script><script src="https://communityhealthafrica.org/js/dnncore.js?cdv=56" type="text/javascript"></script><script src="https://communityhealthafrica.org/Resources/Search/SearchSkinObjectPreview.js?cdv=56" type="text/javascript"></script><script src="https://communityhealthafrica.org/js/dnn.servicesframework.js?cdv=56" type="text/javascript"></script>
+			<script type="text/javascript">
+				//<![CDATA[
+				Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+				//]]>
+			</script>
+			<script type="text/javascript">
+				$(function() {
+					if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+						  var searchSkinObject = new dnn.searchSkinObject({
+								delayTriggerAutoSearch : 400,
+								minCharRequiredTriggerAutoSearch : 2,
+								searchType: 'S',
+								enableWildSearch: true,
+								cultureCode: 'en-US',
+								portalId: -1
+								}
+						  );
+						  searchSkinObject.init();
+						  
+						  
+						  // attach classic search
+						  var siteBtn = $('#dnn_dnnSearch_SiteRadioButton');
+						  var webBtn = $('#dnn_dnnSearch_WebRadioButton');
+						  var clickHandler = function() {
+								if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+								else searchSkinObject.settings.searchType = 'W';
+						  };
+						  siteBtn.on('change', clickHandler);
+						  webBtn.on('change', clickHandler);
+				 }
+			});
+		</script>
+		<!--ALL SCRIPTS ABOVE-->
+		<link rel='SHORTCUT ICON' href='/Portals/0/favicon.ico?ver=2019-10-07-183442-053' type='image/x-icon' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body id="Body">
+			<main>
+				<div class="container-fluid bannerpane" style="width:100%">
+					<div class="container" style="width:100%">
+						<div class="row justify-content-center" style="width:100%">
+							<div id="dnn_BannerPane" class="col-md-8 text-center DNNEmptyPane"></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div id="dnn_ContentPane" class="col-md-8 text-center">
+							<div class="DnnModule DnnModule-DNN_HTML DnnModule-354">
+								<a name="354"></a>
+								<div id="dnn_ctr354_ContentPane">
+									<!-- Start_Module_354 -->
+									<div id="dnn_ctr354_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+										<div id="dnn_ctr354_HtmlModule_lblContent" class="Normal">
+											<p height="151" width="950">
+												<img alt="Camel Banner" src="https://communityhealthafrica.org/portals/0/Home%20pg%20camels%202.jpg" style="width: 100%;" title="Camel Banner" />
+												
+											</p>
+										</div>
+									</div>
+									<!-- End_Module_354 -->
+								</div>
+							</div>
+							<div class="DnnModule DnnModule-DNN_HTML DnnModule-380">
+								<a name="380"></a>
+								<div id="dnn_ctr380_ContentPane">
+									<!-- Start_Module_380 -->
+									<div id="dnn_ctr380_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+										<div id="dnn_ctr380_HtmlModule_lblContent" class="Normal">
+											<p><span style="font-size:larger;"><strong>2024 The Main Focus - Family Planning (FP)</strong></span></p>
+											<p><strong>For 2024 the generous donors to CHAPS have enabled Communities Health Aftica Trust to field&nbsp;12 Family Planning outreach counselors in Northern Kenya. &nbsp;These 12 FP Corp will be spread across the underserved regions of northern Kenya with their outreach bringing family planning information and counseling to the nomadic tribes in their home encampments.&nbsp;&nbsp;</strong></p>
+											<p><strong>Several larger funders have moved into the Nanyuki, Kenya area but are focused on outreach in the slums and close in villages.&nbsp; While this is valuable activity, it is in the remote areas that family planning can have a huge impact.</strong></p>
+											<p><strong>By spacing the arrival of babies by a few years, the family will have much healthier children and mothers will be more able to care for the family in the face of adversity such as drought.&nbsp; The use of family planning also means that the girls can finish schooling.&nbsp; The effort to bring family planning to these areas began 25 years ago and there are now positive signs of success:</strong></p>
+											<ol>
+												<li><strong>The saying &ldquo;Educate a boy and you educate a man, educate a girl and you educate a family&rdquo; is being proven over and over again.&nbsp; The elders can see how much better the children of educated mothers do in school and are giving permission for school age girls to use family planning.</strong></li>
+												<li><strong>With the children separated by a few years it means fewer children are born.&nbsp; By reducing the pressure on the environment to feed an overwhelming population, human wildlife conflict is reduced, and the degradation of the ecosystem is moderated.</strong></li>
+											</ol>
+											<p>&nbsp;</p>
+											<p>&nbsp;</p>
+											<p>&nbsp;</p>
+										</div>
+									</div>
+									<!-- End_Module_380 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div id="dnn_DoublePaneOneOne" class="col-md-6 cpr-5">
+							<div class="DnnModule DnnModule-DNN_HTML DnnModule-381">
+								<a name="381"></a>
+								<div id="dnn_ctr381_ContentPane">
+									<!-- Start_Module_381 -->
+									<div id="dnn_ctr381_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+										<div id="dnn_ctr381_HtmlModule_lblContent" class="Normal">
+											<h2><span style="font-size:larger;"><span style="font-family: Arial;">CHAPS has Guidestar Silver ranking.</span></span></h2>
+											<p><span style="font-size:larger;"><span style="font-family: Arial;">Chaps is now designated Silver Rating by Guidestar. &nbsp;We are looking at moving up to a aGold rating but at present it would require us to spend significant funds on an accounting audit. &nbsp;Should we find a volunteer who can audit our very simple books we will revisit the question. &nbsp;In the mean time those funds will be spent in support of family planning.</span></span></p>
+											<h2><span style="font-size:larger;"><span style="font-family: Arial;">What we do</span></span></h2>
+											<p><span style="font-size:larger;"><span style="font-family: Arial;">CHAPS provides direct funding to remote clinics that have proven to be effective in their environment. These clinics receive&nbsp;only small amounts of funding from large programs and we endeavor to fill in the gaps. You may direct your donations to one of the following categories of funding:&nbsp; Family Planning, general healthcare, clinic operations, unrestricted funds.</span></span></p>
+											<h2><span style="font-size:larger;"><span style="font-family: Arial;">Family planning&nbsp;</span></span></h2>
+											<p><span style="font-size:larger;"><span style="line-height: 18px; font-weight: normal; letter-spacing: normal; font-family: Arial; color: rgb(68, 68, 68);">Family planning is one of the most critical needs for remote communities to survive and thrive. &nbsp;By choosing to space their children 3-5 years apart it is possible for the whole family to survive the devastating droughts that regularly sweep the north of Kenya.</span><span style="font-family: Arial;">&nbsp;<a href="https://communityhealthafrica.org/Projects/FamilyPlanning.aspx">Read More</a></span></span></p>
+											<h3>&nbsp;</h3>
+											<h2 style="font-weight: bold; font-style: italic;"><span style="font-size:larger;"><span style="font-family:arial;"><span style="caret-color: rgb(0, 0, 0); font-variant-caps: normal; text-size-adjust: auto; color: rgb(0, 0, 0);">Simien Mountains Mobile Medical Service (SMMMS)</span></span></span></h2>
+											<p><span style="font-size:larger;">SMMMS is a clinic&nbsp;that has begun operation in remote Northern Ethiopia.&nbsp; They have 7 clinics scattered through the remote region and also send out backpack nurses.&nbsp; CHAPS funded the training of their15 midwives to be certified to provide reversible Family Planning.&nbsp; This is a classic example of how a small amount of funds; properly placed, can make a huge difference.&nbsp; For $6000 all 15 midwives have been certified for Family Planning including the travel and living costs while taking the course at Gondor University.&nbsp; This new skill&nbsp;will be in operation for the next 20 years.</span></p>
+											<p><span style="font-size:larger;">The next goal is Basic Emergency Obstetrics and Neonatal Care (BEmONC) certification for all of the midwives and the equipment needed to provide the emergency care.&nbsp; Total cost would be about $25,000 to cover 8 clinics.&nbsp;</span></p>
+											<div>
+												<h2>&nbsp;</h2>
+												<ul></ul>
+												<h2><span style="font-size:larger;"><span style="font-family: Arial;">Non-Profit Information</span></span></h2>
+												<p><span style="font-size:larger;"><span style="font-family: Arial;">CHAPS is a US approved 501(c)3 nonprofit.&nbsp;&nbsp;<br style="color: #2e3d47; font-size: small; line-height: 16.9px; text-align: left;" />
+													Our EIN number is&nbsp;<br style="color: #2e3d47; font-size: small; line-height: 16.9px; text-align: left;" />
+													26-2821241.</span></span>
+												</p>
+												<p>&nbsp;</p>
+												<blockquote style="border: none; margin: 0px 0px 0px 40px; padding: 0px; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; font-family: inherit; vertical-align: baseline; quotes: none; line-height: 24px; color: #777777; font-style: italic;">
+													<ul style="border: 0px; margin: 0px 0px 18px 18px; padding: 0px; font: inherit; vertical-align: baseline; list-style: square outside;"></ul>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<!-- End_Module_381 -->
+								</div>
+							</div>
+						</div>
+						<div id="dnn_DoublePaneOneTwo" class="col-md-6 bg-light-grey cp-5">
+							<div class="DnnModule DnnModule-DNN_HTML DnnModule-382">
+								<a name="382"></a>
+								<div id="dnn_ctr382_ContentPane">
+									<!-- Start_Module_382 -->
+									<div id="dnn_ctr382_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+										<div id="dnn_ctr382_HtmlModule_lblContent" class="Normal">
+											<h3>CHAPS is dedicated to easing poverty and suffering by supporting mobile clinics and remote healthcare providers in northern Kenya.&nbsp;</h3>
+											<p>&quot;Any one can make a difference.&nbsp; Everyone should try.&quot; John F. Kennedy</p>
+											<p>&nbsp;</p>
+											<p><img alt="" src="https://communityhealthafrica.org/portals/0/SMMMS%20backpacks%202.jpg" style="width: 300px; height: 281px;" title="" /></p>
+											<p>SMMMS backpack nurse with new backpack</p>
+											<p>&nbsp;</p>
+											<p>&nbsp;</p>
+											<div>
+												<div>&nbsp;</div>
+											</div>
+										</div>
+									</div>
+									<!-- End_Module_382 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid bg-tertiary">
+					<div class="container">
+						<div class="row align-items-center">
+							<div id="dnn_FullWidthBGDoublePaneOne" class="col-md-6 cpy-5 DNNEmptyPane"></div>
+							<div id="dnn_FullWidthBGDoublePaneTwo" class="col-md-6 DNNEmptyPane"></div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div id="dnn_SinglePaneOne" class="col-md-8 text-center DNNEmptyPane"></div>
+					</div>
+				</div>
+			</main>
+	</body>
+</html>
